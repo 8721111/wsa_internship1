@@ -1,0 +1,20 @@
+.btn1{
+    background-color: rgb(0, 13, 255);
+}
+
+    .btn2{
+        background-color: yellow;
+    }
+    .btn3{
+        background-color: green;
+    }
+    .div1{
+        background-color: white;
+        text-align: center;
+        width: fit-content;
+        border: 2px solid black;
+
+    }
+    button:hover{
+        background-color: rgb(115, 13, 90);
+    }
