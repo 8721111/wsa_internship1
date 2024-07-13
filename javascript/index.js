@@ -19,3 +19,31 @@ document.write("<br>",a - b);
 let number=[1,2,3,4,5];
 let fruit=["apple","banana","orange"];
 document.write("<br>",number[4]);
+
+
+// while loop
+let count=0;
+while(count<3){
+  console.log(`count is:${count}`);
+  count=count+1;
+}
+// for loop
+for(let i=0; i<3;i++){
+  document.write(`count is :${i}`);
+
+}
+
+// function
+function great (name){
+  console.log(`hello ${name}`);
+}
+great("bahrti");
+
+
+function sum (a,b){
+  return a+b;
+ 
+  console.log("hello");
+
+}
+console.log(sum(2,4));
