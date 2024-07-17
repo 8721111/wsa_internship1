@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Hello,DOM</h1>
+    <button id ="changeTextBtn">Change Text</button>
+    <button id ="changeColorBtn">Change color</button>
+    <button id ="addElementBtn">add Text</button>
+    <button id ="removeElementBtn">remove Text</button>
+
+    <script>
+        let header = document.getElememtById("header");
+        let addElement = document.getElementById("addElementBtn");
+
+        addElement.addEventListener("click",function (){
+            let para = document.createElement("p");
+            para.innerText = "this is generate by button";
+            document.body.appendChildId(para);
+        });
+
+        let removeElement = document.getElementById("removeElementBtn");
+        removeElement.addEventListener("click", function (){
+            let paragraphs = document.querySelectorAll("p");
+            console.log(paragraphs);
+            if(paragraphs.length > 0){
+                document.body.removeChild(paragraphs[paragraphs.length - 1]);
+            }
+        });
+        </script>
+</body>
+</html>
