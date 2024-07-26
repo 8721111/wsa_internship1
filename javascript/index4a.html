@@ -6,6 +6,7 @@
     <title>Practical Example of dom</title>
   </head>
   <body>
+    <p class="para"></p>
     <h1 id="header">Hello, Dom!</h1>
     <button id="changeTextBtn">Change Text</button>
     <button id="changeColorBtn">Change Color</button>
@@ -34,14 +35,51 @@
           document.body.removeChild(paragraphs[paragraphs.length - 1]);
 
           // paragraphs[3]
-          let changeElement = document.getElementById("changeElementBtn");
-          changeElement.addEventListener("click", function () {
-            p.style.colort="red";
-        });
+        //   let changeElement = document.getElementById("changeElementBtn");
+        //   changeElement.addEventListener("click", function () {
+        //     p.style.colort="red";
+        // });
 
         
         }
       });
+
+
+      let changeText = document.getElementById("changeTextBtn");
+
+// Manupulating the dom using event handler
+
+changeText.addEventListener("click", function () {
+  let para = document.createElement("p");
+  para.innerText = "heyy! everyone this text is change";
+  document.body.appendChild(para);
+});
+
+
+
+ let changeColor  = document.getElementById("changeColorBtn");
+
+ changeColor.addEventListener("click", function () {
+  const P = document.querySelector(".para");
+       P.textContent = "My name is Rohit";
+         alert("Text set!");
+         P.style.color = "red";
+  
+  
+
+//   console.log(paragraphs);
+//   if (paragraphs.length > 0) {
+//     document.body.removeChild(paragraphs[paragraphs.length - 1]);
+
+//     // paragraphs[3]
+//     let changeElement = document.getElementById("changeElementBtn");
+//     changeElement.addEventListener("click", function () {
+   
+//   });
+
+  
+//   }
+ });
     </script>
   </body>
 </html>
